@@ -58,7 +58,7 @@
 // let x = parseInt(prompt("Choisissez un nombre max d'éleves dans la classe"));
 
 // while (c.length < x) {
-//     c.push(prompt("donne moi un nombre a ajouté dans la classe"))
+//     c.push(prompt("donne moi un nom a ajouté dans la classe"))
     
 //     console.log(c);
 // }
@@ -77,9 +77,9 @@
 // let a = parseInt(prompt("Choisissez un choffre jeune bg"))
 // let b = 0
 
-// do {
+// do {b++;
 //     console.log(b);
-//     b++;
+//     
 // } 
 // while (b <= a);
 
@@ -117,10 +117,21 @@
 
 // do { 
 
-//     i--;
+    
 //     console.log(x);
-  
+//     i--;
 // } while (x.shift());
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -153,15 +164,12 @@
 // alert(x)
 
 //   3. Créez une boucle while qui affiche un console.log indiquant chaque itération
-
-// while (!x  || isNaN(x) || x < 10) { 
-    
-//     x = prompt('Entrez un chiffre svp')
-//     console.log(x);
+// let x = parseInt(prompt("Donne moi un chiffre plus petit que 10"))
+// let i =0
+// while (i == i) { 
+// i++;
+// console.log(i);
 // }
-// alert(x)
-
-
 //      > ☢ Ceci créera normalement une boucle infinie ☢
 
 
@@ -177,11 +185,12 @@
 
 //   5. Créez une boucle qui affiche l'itération et qui s'incrémente de 2
 
-let a = 3;
+// let a = 0;
 
-while (condition) {
-    
-}
+// while (a <= 20) {
+//     console.log(a);
+//     a+=2;
+// }
 
 
 
@@ -189,6 +198,21 @@ while (condition) {
 
 //   - Créez un tableau de 4 légumes du nom de `panierLegumes`
 //   - Vider le tableau `panierLegumes` pour mettre son contenu dans un second tableau du nom de 'caisseLegumes'
+
+// let panierlegumes = [
+//     "Carotte",
+//     "Maïs",
+//     "Tomate",
+//     "Radis",
+// ]
+// let caisseLegumes = []
+
+
+// while (panierlegumes.length>0) {
+//     caisseLegumes.push(panierlegumes.shift())
+// }
+// console.log(panierlegumes)
+// console.log(caisseLegumes)
 
 
 
@@ -201,14 +225,23 @@ while (condition) {
 //     - Tant qu'il se trompe, reposez la question.
 //     - S'il a juste, faites une alerte qui le félicite.
 
-
+// let riddle = prompt("Qu'est ce qui est jaune et qui attend ?")
+// while (riddle!="Jonathan") {
+//     riddle = prompt("wrong answer bruh")
+// }
+// alert("bien joué, malinx le lynx")
 
 
 // - ## Exo5
 
 //   - Refaites l'exo 4 avec `do...while`
 
+// let riddle = prompt("Qu'est ce qui est jaune et qui attend ?")
 
+// do {riddle = prompt("wrong answer bruh")
+    
+// } while (riddle!="Jonathan");
+// alert("bien joué, malinx le lynx")
 
 
 // - ## Exo6
@@ -229,3 +262,19 @@ while (condition) {
 //   - Si il met le nom d'un fruit alors le fruit est retiré, on lui montre son nouveau panier puis on lui repose la question, si il met autre chose que le nom d'un fruit alors on lui dit : "Merci bon appétit"
 //   - Chaque fruit entré par l'utilisateur doit finir par être ortographié avec une première lettre majuscule et le reste en minuscule
 //   - Lui montrer son panier
+
+// let x = []
+
+// do {
+//     x.push(prompt("remplie le panier avec des fruits"))
+// } while (x.length<3);
+// console.table(x);
+
+// let vide = prompt("Quelle fruit veux tu enlever ?")
+
+// do {
+//     if (x.includes(vide)) {
+//     x.splice(x.indexOf(vide),1)
+// }
+// } while (x.includes(enlever));
+// console.table(x);
