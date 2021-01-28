@@ -21,8 +21,6 @@
 
 
 
-
-
 // - ## Exercice 2
 
 //   - Créez une variable de type array et insérez toutes les personnes de la classe
@@ -143,14 +141,21 @@
 
 //   1. Créez une boucle qui demande une valeur à l'utilisateur tant que celui-ci n'entre rien
 
-// let x = parseInt(prompt("Donne moi un chiffre"))
+// let x = prompt("Donne moi une valeur"))
 
-// while (!x || isNaN(x)) { 
+// while (!x.trim()); { 
     
 //     x = prompt('Entrez un chiffre svp')
     
 // }
 // alert(x)
+// version 2
+// let x = parseInt(prompt("Donne moi une valeur"));
+
+// while (x == "") {
+//     x = parseInt(prompt("Donne moi une valeur"));
+    
+// }console.log(x);
 
 //   2. Créez une boucle qui demande un chiffre à l'utilisateur tant que celui-ci écrit un chiffre plus petit que 10
 
@@ -163,14 +168,24 @@
 // }
 // alert(x)
 
+
+
 //   3. Créez une boucle while qui affiche un console.log indiquant chaque itération
+
 // let x = parseInt(prompt("Donne moi un chiffre plus petit que 10"))
 // let i =0
 // while (i == i) { 
 // i++;
 // console.log(i);
 // }
-//      > ☢ Ceci créera normalement une boucle infinie ☢
+
+// let x = parseInt(prompt("entres un chiffre"))
+
+// while (x < 10) {
+//     x=parseInt(prompt(`${x} Entrez moi un chiffre`))
+// }console.log(x);
+
+    //  > ☢ Ceci créera normalement une boucle infinie ☢
 
 
 
@@ -217,7 +232,6 @@
 
 
 
-
 // - ## Exo4
 
 //   - Préparez une énigme, puis posez la à l'utilisateur via un prompt
@@ -232,15 +246,30 @@
 // alert("bien joué, malinx le lynx")
 
 
+//v2
+// let qst = prompt("Qui est le plus beau de la coding 17 ?")
+// while (qst!= "Mahad") {
+//     qst = prompt("reccomence qui est le plus beau de la C17 ?")
+// }alert("Bien joué garçon")
+
+
+
+
+
+
+
+
+
 // - ## Exo5
 
 //   - Refaites l'exo 4 avec `do...while`
 
-// let riddle = prompt("Qu'est ce qui est jaune et qui attend ?")
+// let riddle 
 
-// do {riddle = prompt("wrong answer bruh")
+// do {
+//     riddle = prompt("Qu'est ce qui est jaune et qui attend ?")
     
-// } while (riddle!="Jonathan");
+// } while (riddle == "jonathan");
 // alert("bien joué, malinx le lynx")
 
 
@@ -251,6 +280,33 @@
 //     > Si je suis né(e) en 1988(`randomYear`), quel âge ai-je aujourd’hui ?
 //   - L’utilisateur a trois essais. S’il donne la bonne réponse ou qu’il échoue ses trois essais, on sort de la boucle
 //   - Finir en affichant quelques chose de pertinant.
+
+
+
+// let annee = 2021
+// let randomYear = Math.floor(Math.random() * (annee - 1970 +1)) + 1970;
+
+
+
+
+//  let question 
+
+// let reponse = annee - randomYear
+ 
+//  let i = 1;
+
+// do {
+//    question = prompt("Si je suis né(e) en "+randomYear+ " , quel âge ai-je aujourd’hui ?");
+//   i++;
+
+// } while (question != reponse && i<=3 ) 
+ 
+//  if (question == reponse) {
+//        alert("C'est pertinant")
+//      } else {
+//        alert("t'es con ou quoi?")
+//      }
+
 
 
 
